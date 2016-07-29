@@ -1,0 +1,17 @@
+{
+  "name": "pr-front",
+  "authors": [
+    "rodrigo-mamangava <rodrigo@mamangava.com>"
+  ],
+  "description": "Projeto Sistema PR - front",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

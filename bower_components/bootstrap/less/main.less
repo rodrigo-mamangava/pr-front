@@ -1,0 +1,188 @@
+/*
+Theme Name: Ponto de Referêcia 2.0
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: rede-abrolhos
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+rede-abrolhos is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+// Core bootstrap
+@import "bootstrap.less";
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Reset 
+# Colors
+# Typography
+# Elements
+# Forms
+# Header
+        ## faixa verde top
+        ## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+        ## Posts and pages
+        ## Comments
+# Infinite scroll
+# Media
+        ## Captions
+        ## Galleries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Cores
+--------------------------------------------------------------*/
+@roxo: #78278C;
+@branco: #ffffff;
+
+/*--------------------------------------------------------------
+# Funcoes
+--------------------------------------------------------------*/
+.font(@size){    
+    font-size: unit(@size, px);
+    font-size: unit(@size/10, rem);
+}
+
+/*--------------------------------------------------------------
+# botoes
+--------------------------------------------------------------*/
+.btn-home-1{
+    .btn;
+    .button-variant(white, red, red);
+    width: 100%;
+    border-radius: 0;
+    height: 270px;
+    .font(28);
+    white-space: normal;
+    display: block;
+    text-align: center;
+    margin-bottom: 12px;
+
+}
+/*--------------------------------------------------------------
+# body
+--------------------------------------------------------------*/
+body{
+    position: relative;
+}
+/*--------------------------------------------------------------
+# Menu
+--------------------------------------------------------------*/
+.navbar{
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    color: @branco;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 2000;
+
+    .navbar-brand {
+        padding: 0px; /* firefox bug fix */
+    }
+    .navbar-brand>img {
+        height: 60px;
+        margin-top: 51px;
+        margin-left: 69px;
+        width: auto;
+
+        @media (max-width: @screen-xs-max) { 
+            height: 45px;
+            margin-top: 3px;
+            margin-left: 0px;
+        }
+    }
+
+    .navbar-nav{
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        @media (max-width: @screen-xs-max) { 
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+    }
+}
+
+.navbar-default{
+
+    .navbar-nav > li > a {
+        .font(19);
+        color: @branco;
+    }
+} 
+
+
+/*--------------------------------------------------------------
+# Capa
+--------------------------------------------------------------*/
+.capa{
+    position: relative;
+    z-index: 1000;
+
+    margin-top: -164px;
+    width: 100%;
+    height: auto;
+
+
+    img{
+        width: 100%;
+        height: auto;
+    }    
+}
+
+.capa-titulo{
+    position: relative;
+    z-index: 1050;
+    margin-top: -35%;
+}
+
+
+/*--------------------------------------------------------------
+# Main
+--------------------------------------------------------------*/
+main{
+    position: relative;
+    z-index: 1050;
+    margin-top: -150px;
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer{
+    position: relative;
+    z-index: 1050;
+    padding: 50px;
+}
+
+
+
+
+
+
+
