@@ -6767,6 +6767,24 @@ button.close {
         ## Galleries
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
+# reset
+--------------------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  padding: 0;
+  margin: 0;
+}
+body {
+  text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+}
+/*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -6778,6 +6796,27 @@ button.close {
 /*--------------------------------------------------------------
 # botoes
 --------------------------------------------------------------*/
+.setting-btn-padrao {
+  width: 100%;
+  border-radius: 0;
+  height: 270px;
+  font-size: 28px;
+  font-size: 2.8rem;
+  white-space: normal;
+  display: block;
+  text-align: center;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .btn-home-1 {
   display: inline-block;
   margin-bottom: 0;
@@ -6796,9 +6835,9 @@ button.close {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: white;
-  background-color: red;
-  border-color: red;
+  color: #ffffff;
+  background-color: #78278c;
+  border-color: #78278c;
   width: 100%;
   border-radius: 0;
   height: 270px;
@@ -6808,6 +6847,16 @@ button.close {
   display: block;
   text-align: center;
   margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .btn-home-1:focus,
 .btn-home-1:active:focus,
@@ -6846,21 +6895,21 @@ fieldset[disabled] a.btn-home-1 {
 }
 .btn-home-1:focus,
 .btn-home-1.focus {
-  color: white;
-  background-color: #cc0000;
-  border-color: #800000;
+  color: #ffffff;
+  background-color: #561c64;
+  border-color: #230b28;
 }
 .btn-home-1:hover {
-  color: white;
-  background-color: #cc0000;
-  border-color: #c20000;
+  color: #ffffff;
+  background-color: #561c64;
+  border-color: #4f1a5c;
 }
 .btn-home-1:active,
 .btn-home-1.active,
 .open > .dropdown-toggle.btn-home-1 {
-  color: white;
-  background-color: #cc0000;
-  border-color: #c20000;
+  color: #ffffff;
+  background-color: #561c64;
+  border-color: #4f1a5c;
 }
 .btn-home-1:active:hover,
 .btn-home-1.active:hover,
@@ -6871,9 +6920,9 @@ fieldset[disabled] a.btn-home-1 {
 .btn-home-1:active.focus,
 .btn-home-1.active.focus,
 .open > .dropdown-toggle.btn-home-1.focus {
-  color: white;
-  background-color: #a80000;
-  border-color: #800000;
+  color: #ffffff;
+  background-color: #3e1448;
+  border-color: #230b28;
 }
 .btn-home-1:active,
 .btn-home-1.active,
@@ -6889,12 +6938,272 @@ fieldset[disabled] .btn-home-1:focus,
 .btn-home-1.disabled.focus,
 .btn-home-1[disabled].focus,
 fieldset[disabled] .btn-home-1.focus {
-  background-color: red;
-  border-color: red;
+  background-color: #78278c;
+  border-color: #78278c;
 }
 .btn-home-1 .badge {
-  color: red;
-  background-color: white;
+  color: #78278c;
+  background-color: #ffffff;
+}
+.btn-home-2 {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #ffffff;
+  background-color: #cc0000;
+  border-color: #cc0000;
+  width: 100%;
+  border-radius: 0;
+  height: 270px;
+  font-size: 28px;
+  font-size: 2.8rem;
+  white-space: normal;
+  display: block;
+  text-align: center;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.btn-home-2:focus,
+.btn-home-2:active:focus,
+.btn-home-2.active:focus,
+.btn-home-2.focus,
+.btn-home-2:active.focus,
+.btn-home-2.active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn-home-2:hover,
+.btn-home-2:focus,
+.btn-home-2.focus {
+  color: #333333;
+  text-decoration: none;
+}
+.btn-home-2:active,
+.btn-home-2.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.btn-home-2.disabled,
+.btn-home-2[disabled],
+fieldset[disabled] .btn-home-2 {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a.btn-home-2.disabled,
+fieldset[disabled] a.btn-home-2 {
+  pointer-events: none;
+}
+.btn-home-2:focus,
+.btn-home-2.focus {
+  color: #ffffff;
+  background-color: #990000;
+  border-color: #4d0000;
+}
+.btn-home-2:hover {
+  color: #ffffff;
+  background-color: #990000;
+  border-color: #8f0000;
+}
+.btn-home-2:active,
+.btn-home-2.active,
+.open > .dropdown-toggle.btn-home-2 {
+  color: #ffffff;
+  background-color: #990000;
+  border-color: #8f0000;
+}
+.btn-home-2:active:hover,
+.btn-home-2.active:hover,
+.open > .dropdown-toggle.btn-home-2:hover,
+.btn-home-2:active:focus,
+.btn-home-2.active:focus,
+.open > .dropdown-toggle.btn-home-2:focus,
+.btn-home-2:active.focus,
+.btn-home-2.active.focus,
+.open > .dropdown-toggle.btn-home-2.focus {
+  color: #ffffff;
+  background-color: #750000;
+  border-color: #4d0000;
+}
+.btn-home-2:active,
+.btn-home-2.active,
+.open > .dropdown-toggle.btn-home-2 {
+  background-image: none;
+}
+.btn-home-2.disabled:hover,
+.btn-home-2[disabled]:hover,
+fieldset[disabled] .btn-home-2:hover,
+.btn-home-2.disabled:focus,
+.btn-home-2[disabled]:focus,
+fieldset[disabled] .btn-home-2:focus,
+.btn-home-2.disabled.focus,
+.btn-home-2[disabled].focus,
+fieldset[disabled] .btn-home-2.focus {
+  background-color: #cc0000;
+  border-color: #cc0000;
+}
+.btn-home-2 .badge {
+  color: #cc0000;
+  background-color: #ffffff;
+}
+.btn-home-3 {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #ffffff;
+  background-color: #ff6600;
+  border-color: #ff6600;
+  width: 100%;
+  border-radius: 0;
+  height: 270px;
+  font-size: 28px;
+  font-size: 2.8rem;
+  white-space: normal;
+  display: block;
+  text-align: center;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.btn-home-3:focus,
+.btn-home-3:active:focus,
+.btn-home-3.active:focus,
+.btn-home-3.focus,
+.btn-home-3:active.focus,
+.btn-home-3.active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn-home-3:hover,
+.btn-home-3:focus,
+.btn-home-3.focus {
+  color: #333333;
+  text-decoration: none;
+}
+.btn-home-3:active,
+.btn-home-3.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.btn-home-3.disabled,
+.btn-home-3[disabled],
+fieldset[disabled] .btn-home-3 {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a.btn-home-3.disabled,
+fieldset[disabled] a.btn-home-3 {
+  pointer-events: none;
+}
+.btn-home-3:focus,
+.btn-home-3.focus {
+  color: #ffffff;
+  background-color: #cc5200;
+  border-color: #803300;
+}
+.btn-home-3:hover {
+  color: #ffffff;
+  background-color: #cc5200;
+  border-color: #c24e00;
+}
+.btn-home-3:active,
+.btn-home-3.active,
+.open > .dropdown-toggle.btn-home-3 {
+  color: #ffffff;
+  background-color: #cc5200;
+  border-color: #c24e00;
+}
+.btn-home-3:active:hover,
+.btn-home-3.active:hover,
+.open > .dropdown-toggle.btn-home-3:hover,
+.btn-home-3:active:focus,
+.btn-home-3.active:focus,
+.open > .dropdown-toggle.btn-home-3:focus,
+.btn-home-3:active.focus,
+.btn-home-3.active.focus,
+.open > .dropdown-toggle.btn-home-3.focus {
+  color: #ffffff;
+  background-color: #a84300;
+  border-color: #803300;
+}
+.btn-home-3:active,
+.btn-home-3.active,
+.open > .dropdown-toggle.btn-home-3 {
+  background-image: none;
+}
+.btn-home-3.disabled:hover,
+.btn-home-3[disabled]:hover,
+fieldset[disabled] .btn-home-3:hover,
+.btn-home-3.disabled:focus,
+.btn-home-3[disabled]:focus,
+fieldset[disabled] .btn-home-3:focus,
+.btn-home-3.disabled.focus,
+.btn-home-3[disabled].focus,
+fieldset[disabled] .btn-home-3.focus {
+  background-color: #ff6600;
+  border-color: #ff6600;
+}
+.btn-home-3 .badge {
+  color: #ff6600;
+  background-color: #ffffff;
+}
+.btn-ativo {
+  font-size: 20px;
+  font-size: 2rem;
 }
 /*--------------------------------------------------------------
 # body
@@ -6946,6 +7255,13 @@ body {
   font-size: 1.9rem;
   color: #ffffff;
 }
+.navbar-default .navbar-nav > li > a:hover {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a:active,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ff6600;
+}
 /*--------------------------------------------------------------
 # Capa
 --------------------------------------------------------------*/
@@ -6956,22 +7272,93 @@ body {
   width: 100%;
   height: auto;
 }
+@media (max-width: 767px) {
+  .capa {
+    margin-top: 0px;
+  }
+}
 .capa img {
   width: 100%;
   height: auto;
 }
-.capa-titulo {
-  position: relative;
-  z-index: 1050;
-  margin-top: -35%;
-}
 /*--------------------------------------------------------------
-# Main
+# home 
 --------------------------------------------------------------*/
-main {
+.home div.main {
   position: relative;
   z-index: 1050;
-  margin-top: -150px;
+  margin-top: -600px;
+}
+.home div.main .capa-titulo {
+  position: relative;
+  z-index: 1050;
+  margin-bottom: 150px;
+  color: #ffffff;
+}
+@media (max-width: 767px) {
+  .home div.main .capa-titulo {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .home div.main .capa-titulo {
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home div.main .capa-titulo {
+    margin-bottom: 100px;
+  }
+}
+.home div.main .capa-titulo h1 {
+  margin-bottom: 24px;
+}
+@media (max-width: 767px) {
+  .home div.main {
+    margin-top: -150px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .home div.main {
+    margin-top: -400px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .home div.main {
+    margin-top: -450px;
+  }
+}
+.home div.main div.sessao h2 {
+  font-size: 32px;
+  font-size: 3.2rem;
+  font-weight: 400;
+  margin-top: 58px;
+  margin-bottom: 24px;
+}
+.home div.main div.sessao p {
+  font-size: 17.3px;
+  font-size: 1.73rem;
+  font-weight: 400;
+  margin-top: -12px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+}
+.home div.main #implementar-1 {
+  color: #ffffff;
+}
+@media (max-width: 767px) {
+  .home div.main #implementar-1 {
+    color: #78278c;
+  }
+}
+.home div.main #implementar-2 {
+  color: #78278c;
+}
+.home div.main #navegar {
+  color: #cc0000;
+}
+.home div.main #conhecer {
+  color: #ff6600;
 }
 /*--------------------------------------------------------------
 # Footer

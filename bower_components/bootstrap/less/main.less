@@ -49,6 +49,17 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
+# reset
+--------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6, p, a{
+    padding: 0;
+    margin: 0;
+}
+body{
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+/*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -56,6 +67,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 --------------------------------------------------------------*/
 @roxo: #78278C;
 @branco: #ffffff;
+@vermelho: #cc0000;
+@laranja: #ff6600;
+
 
 /*--------------------------------------------------------------
 # Funcoes
@@ -68,9 +82,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # botoes
 --------------------------------------------------------------*/
-.btn-home-1{
-    .btn;
-    .button-variant(white, red, red);
+
+.setting-btn-padrao{
     width: 100%;
     border-radius: 0;
     height: 270px;
@@ -79,7 +92,38 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
     display: block;
     text-align: center;
     margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
+.btn-home-1{
+    .btn;
+    .button-variant(@branco, @roxo, @roxo);
+    .setting-btn-padrao;
+}
+
+.btn-home-2{
+    .btn;
+    .button-variant(@branco, @vermelho, @vermelho);
+    .setting-btn-padrao;
+}
+
+.btn-home-3{
+    .btn;
+    .button-variant(@branco, @laranja, @laranja);
+    .setting-btn-padrao;
+}
+
+.btn-ativo{
+    .font(20);    
 }
 /*--------------------------------------------------------------
 # body
@@ -132,6 +176,14 @@ body{
     .navbar-nav > li > a {
         .font(19);
         color: @branco;
+        &:hover{
+            color: @branco;
+        }
+
+        &:active, &:focus{
+            color: @laranja;
+        }
+
     }
 } 
 
@@ -143,9 +195,14 @@ body{
     position: relative;
     z-index: 1000;
 
+
     margin-top: -164px;
     width: 100%;
     height: auto;
+
+    @media (max-width: @screen-xs-max) { 
+        margin-top: 0px;
+    }
 
 
     img{
@@ -154,21 +211,93 @@ body{
     }    
 }
 
-.capa-titulo{
-    position: relative;
-    z-index: 1050;
-    margin-top: -35%;
-}
+
 
 
 /*--------------------------------------------------------------
-# Main
+# home 
 --------------------------------------------------------------*/
-main{
-    position: relative;
-    z-index: 1050;
-    margin-top: -150px;
+
+.home{
+
+
+
+    div.main{
+        position: relative;
+        z-index: 1050;
+        margin-top: -600px;
+
+
+
+        .capa-titulo{
+            position: relative;
+            z-index: 1050;
+            margin-bottom: 150px;
+            color: @branco;
+
+            @media (max-width: @screen-xs-max) { 
+                margin-bottom: 20px;
+            }
+            @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { 
+                margin-bottom: 50px;
+            }
+
+            @media (min-width: @screen-md-min) and (max-width: @screen-md-max) { 
+                margin-bottom: 100px;
+            }
+
+            h1{
+                margin-bottom: 24px;
+            }
+        }
+
+
+        @media (max-width: @screen-xs-max) { 
+            margin-top: -150px;
+        }
+        @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { 
+            margin-top: -400px;
+        }
+        @media (min-width: @screen-md-min) and (max-width: @screen-md-max) { 
+            margin-top: -450px;
+        }
+
+
+        div.sessao{
+            h2{
+                .font(32);
+                font-weight: 400;
+                margin-top: (70px-12px);
+                margin-bottom: 24px;
+            }
+
+            p{
+                .font(17.3);
+                font-weight: 400;
+                margin-top: -12px;
+                margin-bottom: 24px;
+                text-transform: uppercase;
+            }
+        }
+
+        #implementar-1{
+            color: @branco;
+            @media (max-width: @screen-xs-max) { 
+                color: @roxo;;
+            }
+        }
+        #implementar-2{
+            color: @roxo;
+        }
+        #navegar{
+            color: @vermelho;
+        }
+        #conhecer{
+            color: @laranja;
+        }
+    }
 }
+
 
 
 /*--------------------------------------------------------------
@@ -179,10 +308,4 @@ footer{
     z-index: 1050;
     padding: 50px;
 }
-
-
-
-
-
-
 

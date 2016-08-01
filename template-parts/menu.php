@@ -17,9 +17,9 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Quero implementar</a></li>
-                <li><a href="#">Quero Navegar</a></li>
-                <li><a href="#">Quero Conhecer</a></li>
+                <li><a href="#implementar-1">Quero implementar</a></li>
+                <li><a href="#navegar">Quero Navegar</a></li>
+                <li><a href="#conhecer">Quero Conhecer</a></li>
                 <li><a href="#"><img src="image/search.png"></a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
